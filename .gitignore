@@ -1,0 +1,4 @@
+templates/node_modules
+*.swp
+__pycache__
+solar_data/*

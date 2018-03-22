@@ -1,0 +1,230 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/shinjan/.nvm/versions/node/v6.12.0/bin/node',
+1 verbose cli   '/home/shinjan/.nvm/versions/node/v6.12.0/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'material-design-icons',
+1 verbose cli   '--save' ]
+2 info using npm@3.10.10
+3 info using node@v6.12.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData material-design-icons
+8 silly fetchNamedPackageData material-design-icons
+9 silly mapToRegistry name material-design-icons
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'material-design-icons',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'material-design-icons',
+12 silly mapToRegistry   name: 'material-design-icons',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/material-design-icons
+14 verbose request uri https://registry.npmjs.org/material-design-icons
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 7:43:02 PM
+17 verbose request id 5315daf250b6c427
+18 http request GET https://registry.npmjs.org/material-design-icons
+19 http 200 https://registry.npmjs.org/material-design-icons
+20 verbose headers { 'content-type': 'application/json; charset=UTF-8',
+20 verbose headers   server: 'UploadServer',
+20 verbose headers   'cache-control': 'max-age=300',
+20 verbose headers   'last-modified': 'Sat, 24 Feb 2018 18:13:17 GMT',
+20 verbose headers   etag: '"5a91ab3d-4f36"',
+20 verbose headers   'x-npm-region': 'EU-East',
+20 verbose headers   'content-encoding': 'gzip',
+20 verbose headers   'content-length': '3466',
+20 verbose headers   'accept-ranges': 'bytes',
+20 verbose headers   date: 'Thu, 22 Mar 2018 14:13:03 GMT',
+20 verbose headers   via: '1.1 varnish',
+20 verbose headers   age: '339',
+20 verbose headers   connection: 'keep-alive',
+20 verbose headers   'x-served-by': 'cache-fra19121-FRA',
+20 verbose headers   'x-cache': 'HIT',
+20 verbose headers   'x-cache-hits': '1',
+20 verbose headers   'x-timer': 'S1521727983.043910,VS0,VE1',
+20 verbose headers   vary: 'Accept-Encoding, Accept' }
+21 silly get cb [ 200,
+21 silly get   { 'content-type': 'application/json; charset=UTF-8',
+21 silly get     server: 'UploadServer',
+21 silly get     'cache-control': 'max-age=300',
+21 silly get     'last-modified': 'Sat, 24 Feb 2018 18:13:17 GMT',
+21 silly get     etag: '"5a91ab3d-4f36"',
+21 silly get     'x-npm-region': 'EU-East',
+21 silly get     'content-encoding': 'gzip',
+21 silly get     'content-length': '3466',
+21 silly get     'accept-ranges': 'bytes',
+21 silly get     date: 'Thu, 22 Mar 2018 14:13:03 GMT',
+21 silly get     via: '1.1 varnish',
+21 silly get     age: '339',
+21 silly get     connection: 'keep-alive',
+21 silly get     'x-served-by': 'cache-fra19121-FRA',
+21 silly get     'x-cache': 'HIT',
+21 silly get     'x-cache-hits': '1',
+21 silly get     'x-timer': 'S1521727983.043910,VS0,VE1',
+21 silly get     vary: 'Accept-Encoding, Accept' } ]
+22 verbose get saving material-design-icons to /home/shinjan/.npm/registry.npmjs.org/material-design-icons/.cache.json
+23 verbose correctMkdir /home/shinjan/.npm correctMkdir not in flight; initializing
+24 silly install normalizeTree
+25 silly loadCurrentTree Finishing
+26 silly loadIdealTree Starting
+27 silly install loadIdealTree
+28 silly cloneCurrentTree Starting
+29 silly install cloneCurrentTreeToIdealTree
+30 silly cloneCurrentTree Finishing
+31 silly loadShrinkwrap Starting
+32 silly install loadShrinkwrap
+33 silly loadShrinkwrap Finishing
+34 silly loadAllDepsIntoIdealTree Starting
+35 silly install loadAllDepsIntoIdealTree
+36 silly resolveWithNewModule material-design-icons@3.0.1 checking installable status
+37 silly cache add args [ 'material-design-icons', null ]
+38 verbose cache add spec material-design-icons
+39 silly cache add parsed spec Result {
+39 silly cache add   raw: 'material-design-icons',
+39 silly cache add   scope: null,
+39 silly cache add   escapedName: 'material-design-icons',
+39 silly cache add   name: 'material-design-icons',
+39 silly cache add   rawSpec: '',
+39 silly cache add   spec: 'latest',
+39 silly cache add   type: 'tag' }
+40 silly addNamed material-design-icons@latest
+41 verbose addNamed "latest" is being treated as a dist-tag for material-design-icons
+42 info addNameTag [ 'material-design-icons', 'latest' ]
+43 silly mapToRegistry name material-design-icons
+44 silly mapToRegistry using default registry
+45 silly mapToRegistry registry https://registry.npmjs.org/
+46 silly mapToRegistry data Result {
+46 silly mapToRegistry   raw: 'material-design-icons',
+46 silly mapToRegistry   scope: null,
+46 silly mapToRegistry   escapedName: 'material-design-icons',
+46 silly mapToRegistry   name: 'material-design-icons',
+46 silly mapToRegistry   rawSpec: '',
+46 silly mapToRegistry   spec: 'latest',
+46 silly mapToRegistry   type: 'tag' }
+47 silly mapToRegistry uri https://registry.npmjs.org/material-design-icons
+48 verbose addNameTag registry:https://registry.npmjs.org/material-design-icons not in flight; fetching
+49 verbose get https://registry.npmjs.org/material-design-icons not expired, no request
+50 silly addNameTag next cb for material-design-icons with tag latest
+51 silly addNamed material-design-icons@3.0.1
+52 verbose addNamed "3.0.1" is a plain semver version for material-design-icons
+53 silly mapToRegistry name material-design-icons
+54 silly mapToRegistry using default registry
+55 silly mapToRegistry registry https://registry.npmjs.org/
+56 silly mapToRegistry data Result {
+56 silly mapToRegistry   raw: 'material-design-icons',
+56 silly mapToRegistry   scope: null,
+56 silly mapToRegistry   escapedName: 'material-design-icons',
+56 silly mapToRegistry   name: 'material-design-icons',
+56 silly mapToRegistry   rawSpec: '',
+56 silly mapToRegistry   spec: 'latest',
+56 silly mapToRegistry   type: 'tag' }
+57 silly mapToRegistry uri https://registry.npmjs.org/material-design-icons
+58 verbose addRemoteTarball https://registry.npmjs.org/material-design-icons/-/material-design-icons-3.0.1.tgz not in flight; adding
+59 verbose addRemoteTarball [ 'https://registry.npmjs.org/material-design-icons/-/material-design-icons-3.0.1.tgz',
+59 verbose addRemoteTarball   '9a71c48747218ebca51e51a66da682038cdcb7bf' ]
+60 info retry fetch attempt 1 at 7:43:03 PM
+61 info attempt registry request try #1 at 7:43:03 PM
+62 http fetch GET https://registry.npmjs.org/material-design-icons/-/material-design-icons-3.0.1.tgz
+63 http fetch 200 https://registry.npmjs.org/material-design-icons/-/material-design-icons-3.0.1.tgz
+64 silly fetchAndShaCheck shasum 9a71c48747218ebca51e51a66da682038cdcb7bf
+65 verbose addTmpTarball /tmp/npm-9418-dd2fd454/registry.npmjs.org/material-design-icons/-/material-design-icons-3.0.1.tgz not in flight; adding
+66 verbose addTmpTarball already have metadata; skipping unpack for material-design-icons@3.0.1
+67 verbose correctMkdir /home/shinjan/.npm correctMkdir not in flight; initializing
+68 silly cache afterAdd material-design-icons@3.0.1
+69 verbose afterAdd /home/shinjan/.npm/material-design-icons/3.0.1/package/package.json not in flight; writing
+70 verbose correctMkdir /home/shinjan/.npm correctMkdir not in flight; initializing
+71 verbose afterAdd /home/shinjan/.npm/material-design-icons/3.0.1/package/package.json written
+72 silly loadAllDepsIntoIdealTree Finishing
+73 silly loadIdealTree Finishing
+74 silly currentTree seil_solar@1.0.0
+74 silly currentTree +-- angular-animate@1.6.8
+74 silly currentTree +-- angular-aria@1.6.8
+74 silly currentTree +-- angular-jwt@0.1.9
+74 silly currentTree +-- angular-material@1.1.6
+74 silly currentTree +-- angular-messages@1.6.8
+74 silly currentTree +-- angular-resource@1.6.8
+74 silly currentTree +-- angular-route@1.6.8
+74 silly currentTree +-- angular@1.6.8
+74 silly currentTree `-- satellizer@0.15.5
+75 silly idealTree seil_solar@1.0.0
+75 silly idealTree +-- angular-animate@1.6.8
+75 silly idealTree +-- angular-aria@1.6.8
+75 silly idealTree +-- angular-jwt@0.1.9
+75 silly idealTree +-- angular-material@1.1.6
+75 silly idealTree +-- angular-messages@1.6.8
+75 silly idealTree +-- angular-resource@1.6.8
+75 silly idealTree +-- angular-route@1.6.8
+75 silly idealTree +-- angular@1.6.8
+75 silly idealTree +-- material-design-icons@3.0.1
+75 silly idealTree `-- satellizer@0.15.5
+76 silly generateActionsToTake Starting
+77 silly install generateActionsToTake
+78 silly generateActionsToTake Finishing
+79 silly diffTrees action count 1
+80 silly diffTrees add material-design-icons@3.0.1
+81 silly decomposeActions action count 8
+82 silly decomposeActions fetch material-design-icons@3.0.1
+83 silly decomposeActions extract material-design-icons@3.0.1
+84 silly decomposeActions test material-design-icons@3.0.1
+85 silly decomposeActions preinstall material-design-icons@3.0.1
+86 silly decomposeActions build material-design-icons@3.0.1
+87 silly decomposeActions install material-design-icons@3.0.1
+88 silly decomposeActions postinstall material-design-icons@3.0.1
+89 silly decomposeActions finalize material-design-icons@3.0.1
+90 silly runTopLevelLifecycles Starting
+91 silly executeActions Starting
+92 silly install executeActions
+93 silly doSerial global-install 0
+94 silly doParallel fetch 1
+95 verbose correctMkdir /home/shinjan/.npm/_locks correctMkdir not in flight; initializing
+96 verbose lock using /home/shinjan/.npm/_locks/staging-a27664918c656c7f.lock for /run/user/1001/gvfs/sftp:host=10.129.149.141,user=pi/home/pi/Workspaces/solar_data_capture/templates/node_modules/.staging
+97 silly doParallel extract 1
+98 silly extract material-design-icons@3.0.1
+99 verbose unbuild node_modules/.staging/material-design-icons-5b786ba2
+100 silly gentlyRm /run/user/1001/gvfs/sftp:host=10.129.149.141,user=pi/home/pi/Workspaces/solar_data_capture/templates/node_modules/.staging/material-design-icons-5b786ba2 is being purged from base /run/user/1001/gvfs/sftp:host=10.129.149.141,user=pi/home/pi/Workspaces/solar_data_capture/templates
+101 verbose gentlyRm don't care about contents; nuking /run/user/1001/gvfs/sftp:host=10.129.149.141,user=pi/home/pi/Workspaces/solar_data_capture/templates/node_modules/.staging/material-design-icons-5b786ba2
+102 verbose tar unpack /home/shinjan/.npm/material-design-icons/3.0.1/package.tgz
+103 verbose tar unpacking to /run/user/1001/gvfs/sftp:host=10.129.149.141,user=pi/home/pi/Workspaces/solar_data_capture/templates/node_modules/.staging/material-design-icons-5b786ba2
+104 silly gentlyRm /run/user/1001/gvfs/sftp:host=10.129.149.141,user=pi/home/pi/Workspaces/solar_data_capture/templates/node_modules/.staging/material-design-icons-5b786ba2 is being purged
+105 verbose gentlyRm don't care about contents; nuking /run/user/1001/gvfs/sftp:host=10.129.149.141,user=pi/home/pi/Workspaces/solar_data_capture/templates/node_modules/.staging/material-design-icons-5b786ba2
+106 silly gunzTarPerm modes [ '775', '664' ]
+107 silly gunzTarPerm extractEntry package.json
+108 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+109 silly gunzTarPerm extractEntry .npmignore
+110 silly gunzTarPerm modified mode [ '.npmignore', 493, 509 ]
+111 silly gunzTarPerm extractEntry README.md
+112 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+113 error tar.unpack untar error /home/shinjan/.npm/material-design-icons/3.0.1/package.tgz
+114 verbose unlock done using /home/shinjan/.npm/_locks/staging-a27664918c656c7f.lock for /run/user/1001/gvfs/sftp:host=10.129.149.141,user=pi/home/pi/Workspaces/solar_data_capture/templates/node_modules/.staging
+115 silly rollbackFailedOptional Starting
+116 silly rollbackFailedOptional Finishing
+117 silly runTopLevelLifecycles Finishing
+118 silly install printInstalled
+119 warn seil_solar@1.0.0 No repository field.
+120 verbose If you need help, you may report this error at:
+120 verbose     <https://github.com/npm/npm/issues>
+121 verbose fstream_path /run/user/1001/gvfs/sftp:host=10.129.149.141,user=pi/home/pi/Workspaces/solar_data_capture/templates/node_modules/.staging/material-design-icons-5b786ba2/package.json
+122 verbose fstream_type File
+123 verbose fstream_class FileWriter
+124 verbose fstream_finish_call utimes
+125 verbose stack Error: ENOTSUP: operation not supported on socket, utime '/run/user/1001/gvfs/sftp:host=10.129.149.141,user=pi/home/pi/Workspaces/solar_data_capture/templates/node_modules/.staging/material-design-icons-5b786ba2/package.json'
+125 verbose stack     at Error (native)
+126 verbose fstream_stack /home/shinjan/.nvm/versions/node/v6.12.0/lib/node_modules/npm/node_modules/fstream/lib/writer.js:306:21
+126 verbose fstream_stack FSReqWrap.oncomplete (fs.js:123:15)
+127 verbose cwd /run/user/1001/gvfs/sftp:host=10.129.149.141,user=pi/home/pi/Workspaces/solar_data_capture/templates
+128 error Linux 4.4.0-116-generic
+129 error argv "/home/shinjan/.nvm/versions/node/v6.12.0/bin/node" "/home/shinjan/.nvm/versions/node/v6.12.0/bin/npm" "install" "material-design-icons" "--save"
+130 error node v6.12.0
+131 error npm  v3.10.10
+132 error path /run/user/1001/gvfs/sftp:host=10.129.149.141,user=pi/home/pi/Workspaces/solar_data_capture/templates/node_modules/.staging/material-design-icons-5b786ba2/package.json
+133 error code ENOTSUP
+134 error errno -95
+135 error syscall utime
+136 error nospc ENOTSUP: operation not supported on socket, utime '/run/user/1001/gvfs/sftp:host=10.129.149.141,user=pi/home/pi/Workspaces/solar_data_capture/templates/node_modules/.staging/material-design-icons-5b786ba2/package.json'
+137 error nospc This is most likely not a problem with npm itself
+137 error nospc and is related to insufficient space on your system.
+138 verbose exit [ -95, true ]
