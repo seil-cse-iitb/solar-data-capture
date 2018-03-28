@@ -1,5 +1,5 @@
 from flask import Flask, render_template, send_from_directory, Response
-import sys, time, json, urllib.request, socket
+import sys, time, json, urllib.request, socket, os
 from wifi_client_list import *
 timeout=10
 socket.setdefaulttimeout(timeout)
@@ -34,6 +34,16 @@ def client_index():
 		devices.append({"id":id,"ip":ip,"mac":mac})
 
 	return Response(json.dumps(devices),  mimetype='application/json')
+
+@app.route('/download/<path:ip>/<path:timestamp>')
+def download(ip,timestamp):
+    data_retrieve_url = "http://%s/solarData.txt?%s"%(ip, timestamp)
+    data = requests.get(data_retrieve_url).text
+    f = open(os.path.join(app.root_path,"solar_data/%s_%s.txt"%(ip,timestamp)),"w")
+    f.write(data)
+    f.close()
+    return send_from_directory('solar_data',os.path.basename(f.name))
+
 
 @app.route('/js/<path:path>')
 def send_js(path):

@@ -55,7 +55,7 @@
 				    <input ng-model="device.debug">
 				</md-input-container>
 			</p>
-		    <md-button class="md-secondary" ng-href="http://[[device.ip]]/solarData.txt?[[timestamp]]" download="[[device.id]]_[[timestamp]].txt">DOWNLOAD</md-button>
+		    <md-button class="md-secondary" ng-href="/download/[[device.ip]]/[[timestamp]]" download="[[device.id]]_[[timestamp]].txt">DOWNLOAD</md-button>
 		    <md-button class="md-secondary" ng-click="sendDebug(device,$event)">DEBUG</md-button>
 		  </md-list-item>
 		</md-list>
