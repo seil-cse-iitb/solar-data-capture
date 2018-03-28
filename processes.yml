@@ -1,0 +1,5 @@
+apps:
+  - script   : ./solar-data-capture/server.py
+    instances: 1
+    exec_mode: fork
+    interpreter: /home/pi/virtualenv/solar-data-capture/bin/python3

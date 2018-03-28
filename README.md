@@ -9,4 +9,5 @@ Solar data collection app creates wifi hotspot to which nodemcus connect and the
 Change the `templates/js/config.js` with the IP of the hotspot. Ideally should not change
 
 # Deploy
-* Run `FLASK_APP=server.py flask run --host=0.0.0.0` from project root
+* Run `python3 server.py` from project root
+* Sample PM2 startup script also present. Copy it to parent folder of project and run using `pm2 start processes.yml`

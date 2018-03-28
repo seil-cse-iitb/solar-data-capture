@@ -50,3 +50,6 @@ def send_css(path):
 @app.route('/fonts/<path:path>')
 def send_fonts(path):
 	return send_from_directory('templates/fonts', path)
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0")
