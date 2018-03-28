@@ -16,7 +16,7 @@ angular.module('seil_solar')
 
     $scope.sendDebug = function(device){
     	console.log(device.debug)
-    	$http.get("http://"+device.ip+"/debug?"+device.debug).then(function successCallback(reponse){
+    	$http.get("/debug/"+device.ip+"/"+device.debug).then(function successCallback(reponse){
     		alert("Debug message sent successfully");
     	},function errorCallback(reponse){
     		alert("Debug message could not be sent");

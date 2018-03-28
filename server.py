@@ -37,12 +37,23 @@ def client_index():
 
 @app.route('/download/<path:ip>/<path:timestamp>')
 def download(ip,timestamp):
-    data_retrieve_url = "http://%s/solarData.txt?%s"%(ip, timestamp)
-    data = requests.get(data_retrieve_url).text
-    f = open(os.path.join(app.root_path,"solar_data/%s_%s.txt"%(ip,timestamp)),"w")
-    f.write(data)
-    f.close()
-    return send_from_directory('solar_data',os.path.basename(f.name))
+	data_retrieve_url = "http://%s/solarData.txt?%s"%(ip, timestamp)
+	data = requests.get(data_retrieve_url).text
+	f = open(os.path.join(app.root_path,"solar_data/%s_%s.txt"%(ip,timestamp)),"w")
+	f.write(data)
+	f.close()
+	return send_from_directory('solar_data',os.path.basename(f.name))
+
+@app.route('/debug/<path:ip>/<path:message>')
+def debug(ip, message):
+	debug_send_url = "http://%s/debug?%s"%(ip, message)
+	try:
+		with urllib.request.urlopen(debug_send_url) as response:
+			response = response.read().decode()
+		# return Response({"message":"Debug sent"},  mimetype='application/json')
+	except Exception as e:
+		print(e)
+	return Response(json.dumps({"message":"Debug sent"}),  mimetype='application/json')
 
 
 @app.route('/js/<path:path>')
