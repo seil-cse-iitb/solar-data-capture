@@ -57,6 +57,7 @@
 			</p>
 		    <md-button class="md-secondary" ng-href="/download/[[device.ip]]/[[timestamp]]" download="[[device.id]]_[[timestamp]].txt">DOWNLOAD</md-button>
 		    <md-button class="md-secondary" ng-click="sendDebug(device,$event)">DEBUG</md-button>
+		    <md-button class="md-secondary" ng-click="liveData(device, $event)">Live Data </md-button>
 		  </md-list-item>
 		</md-list>
 	  </md-content>

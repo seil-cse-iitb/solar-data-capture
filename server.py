@@ -44,6 +44,18 @@ def download(ip,timestamp):
 	f.close()
 	return send_from_directory('solar_data',os.path.basename(f.name))
 
+@app.route('/live_data/<path:ip>/<path:timestamp>')
+def live_data(ip, timestamp):
+	data_retrieve_url = "http://%s/liveData"%(ip)
+	local_filename = os.path.join(app.root_path,"solar_data/%s_%s.txt"%(ip,timestamp))
+	r = requests.get(data_retrieve_url, stream = True)
+	with open(local_filename, 'wb') as f:
+		for chunk in r.iter_content(chunk_size=1024): 
+			if chunk: # filter out keep-alive new chunks
+				f.write(chunk)
+				#f.flush() commented by recommendation from J.F.Sebastian
+	return local_filename
+
 @app.route('/debug/<path:ip>/<path:message>')
 def debug(ip, message):
 	debug_send_url = "http://%s/debug?%s"%(ip, message)

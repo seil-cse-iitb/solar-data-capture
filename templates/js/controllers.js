@@ -13,7 +13,14 @@ angular.module('seil_solar')
     }, function errorCallback(response){
     	console.log(response)
     })
-
+    $scope.liveData = function(device){
+        console.log(device)
+        $http.get("/live_data/"+device.ip+"/"+$scope.timestamp).then(function successCallback(response){
+		alert("Successfully downloaded logging data");
+	}, function errorCallback(response){
+		alert("Error receiving logging data");
+	})
+    }
     $scope.sendDebug = function(device){
     	console.log(device.debug)
     	$http.get("/debug/"+device.ip+"/"+device.debug).then(function successCallback(reponse){
