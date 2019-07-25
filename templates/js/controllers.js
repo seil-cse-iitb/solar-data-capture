@@ -3,10 +3,12 @@ angular.module('seil_solar')
 	.controller('HomeCtrl', function ($scope, $http, $window, $location) {
 		$scope.devices = [];
 		$scope.in_progress = true;
-		var d = new Date
-		$scope.timestamp = d.toDateString() +
+		$scope.timestamp = function(){
+			var d = new Date
+			return ('0' + d.getDate()).slice(-2) +
 			('0' + d.getHours()).slice(-2) +
 			('0' + d.getMinutes()).slice(-2);
+		}
 		$http.get("/client").then(function successCallback(response) {
 			$scope.devices = response.data
 			$scope.in_progress = false;
@@ -15,7 +17,7 @@ angular.module('seil_solar')
 		})
 		$scope.startLiveData = function (device) {
 			// console.log(device)
-			$http.get("/start_live_data/" + device.ip + "/" + $scope.timestamp).then(function successCallback(response) {
+			$http.get("/start_live_data/" + device.ip + "/" + $scope.timestamp()).then(function successCallback(response) {
 				alert("Started live data streaming. Downloaded data is being saved on RPi. Click on Stop Live Data to stop and download here");
 				device.streaming = true;
 				device.thread_name = response.data;
