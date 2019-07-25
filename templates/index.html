@@ -45,7 +45,7 @@
 
 	    <md-list  ng-cloak>
 
-		  <md-subheader class="md-no-sticky">Devices found (Click to start download)
+		  <md-subheader class="md-no-sticky">Devices found
 		  <md-progress-circular md-mode="indeterminate" ng-show="in_progress"></md-progress-circular>
 		</md-subheader>
 		  <md-list-item ng-repeat="(key, device) in devices"  class="secondary-button-padding">
@@ -57,7 +57,8 @@
 			</p>
 		    <md-button class="md-secondary" ng-href="/download/[[device.ip]]/[[timestamp]]" download="[[device.id]]_[[timestamp]].txt">DOWNLOAD</md-button>
 		    <md-button class="md-secondary" ng-click="sendDebug(device,$event)">DEBUG</md-button>
-		    <md-button class="md-secondary" ng-click="liveData(device, $event)">Live Data </md-button>
+		    <md-button class="md-secondary" ng-if="!device.streaming" ng-click="startLiveData(device, $event)">Start Live Data </md-button>
+		    <md-button class="md-warn" ng-if="device.streaming" ng-href="/stop_live_data/[[device.thread_name]]" download="[[device.id]]_[[timestamp]]_live.txt" ng-click="device.streaming=false">Stop Live Data </md-button>
 		  </md-list-item>
 		</md-list>
 	  </md-content>
