@@ -48,7 +48,7 @@
 		  <md-subheader class="md-no-sticky">Devices found (Click to start download)
 		  <md-progress-circular md-mode="indeterminate" ng-show="in_progress"></md-progress-circular>
 		</md-subheader>
-		  <md-list-item ng-repeat="device in devices"  class="secondary-button-padding">
+		  <md-list-item ng-repeat="(key, device) in devices"  class="secondary-button-padding">
 		    <p>[[ device.id ]] 
 		    	<md-input-container flex=100>
 				    <label>Debug message</label>

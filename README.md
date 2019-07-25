@@ -11,3 +11,12 @@ Change the `templates/js/config.js` with the IP of the hotspot. Ideally should n
 # Deploy
 * Run `python3 server.py` from project root
 * Sample PM2 startup script also present. Copy it to parent folder of project and run using `pm2 start processes.yml`
+
+# Management
+* To stop server `pm2 stop server`
+* To restart server `pm2 restart server`
+* To start server `pm2 start server`
+* To view logs `pm2 logs`. Ctrl+C to quit
+
+
+
